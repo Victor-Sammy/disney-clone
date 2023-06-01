@@ -1,3 +1,4 @@
+import { url } from 'inspector'
 import NextAuth from 'next-auth'
 import GoogleProvider from 'next-auth/providers/google'
 export default NextAuth({
@@ -12,8 +13,7 @@ export default NextAuth({
   callbacks: {
     async redirect({ url }) {
       // Allows relative callback URLs
-      if (url.includes('/login'))
-        return '/' || 'https://disney-clone-nine-omega.vercel.app'
+      if (url.includes('/login')) return '/'
       if (!url.includes('/')) return '/login'
       return url
     },
