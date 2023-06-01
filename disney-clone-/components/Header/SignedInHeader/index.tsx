@@ -2,19 +2,25 @@ import React from 'react'
 import { Session } from 'next-auth'
 import { DropDown, NavMenu, SignOut, UserImg } from '../styles'
 import { signOut } from 'next-auth/react'
+import { useRouter } from 'next/router'
 
 interface Props {
     session: Session 
 }
 
+
 function SignedInHeader({session}: Props) {
   console.log(session)
   const image = session?.user?.image as string;
   const name = session?.user?.name as string;
+
+  const router = useRouter()
   return (
     <>
       <NavMenu>
-        <a>
+        <a onClick={()=> router.push({
+        pathname: "/",
+      })}>
           <img src="/images/home-icon.svg" alt="" />
           <span>HOME</span>
         </a>

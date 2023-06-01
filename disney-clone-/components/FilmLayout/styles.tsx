@@ -46,6 +46,11 @@ export const PlayButton = styled.button`
   &:hover {
     background: rgb(198, 198, 198);
   }
+  @media (max-width: 600px ) {
+    width: 110px;
+    font-size: 10px;
+    justify-content: center;
+  }
 `;
 
 export const TrailerButton = styled(PlayButton)`
