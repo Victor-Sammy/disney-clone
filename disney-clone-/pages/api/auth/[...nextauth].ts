@@ -13,7 +13,7 @@ export default NextAuth({
     async redirect({ url }) {
       // Allows relative callback URLs
       if (url.includes('/login')) return '/'
-      if (!url.includes('/')) return '/login'
+      if (!url.includes('/')) return '/'
       return url
     },
   },
