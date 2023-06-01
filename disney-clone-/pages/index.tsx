@@ -21,6 +21,12 @@ export default function Home({ movieResults }: Props) {
         pathname: "/login",
       });
     }
+    if (session) {
+      // redirect to the homepage
+      router.push({
+        pathname: "/",
+      });
+    }
     return () => {};
   }, []);
 
