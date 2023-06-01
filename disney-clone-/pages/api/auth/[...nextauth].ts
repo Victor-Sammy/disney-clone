@@ -14,7 +14,7 @@ export default NextAuth({
       // Allows relative callback URLs
       if (url.includes('/login'))
         return '/' || 'https://disney-clone-nine-omega.vercel.app'
-      if (!url.includes('/')) return '/login'
+      // if (!url.includes('/')) return '/login'
       return url
     },
   },
