@@ -1,5 +1,6 @@
 import NextAuth from 'next-auth'
 import GoogleProvider from 'next-auth/providers/google'
+
 export default NextAuth({
   // Configure one or more authentication providers
   providers: [
@@ -12,10 +13,20 @@ export default NextAuth({
   callbacks: {
     async redirect({ url }) {
       //const URLs = window.location.pathname
-      // Allows relative callback URLs
+      //     // Allows relative callback URLs
       if (url.includes('/login')) return '/'
       if (!url.includes('/')) return '/login'
       return url
     },
   },
 })
+
+// useEffect(() => {
+//   const router = useRouter()
+//   const URLs = window.location.pathname
+//   // Allows relative callback URLs
+//   if (URLs.includes('/login'))
+//     router.push({
+//       pathname: `${window.location.pathname.slice(0, -5)}`,
+//     })
+// })

@@ -1,6 +1,0 @@
-{
-    "rewrites": [
-      { "source": "/", "destination": "/index.tsx", "permanent": true },
-      { "source": "/login", "destination": "/login.tsx", "permanent": true }
-    ]
-  }
