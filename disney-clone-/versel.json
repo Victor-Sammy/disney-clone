@@ -1,5 +1,6 @@
 {
     "rewrites": [
-      { "source": "https://disney-clone-nine-omega.vercel.app", "destination": "http://localhost:3000", "permanent": true }
+      { "source": "/", "destination": "/index.tsx", "permanent": true },
+      { "source": "/login", "destination": "/login.tsx", "permanent": true }
     ]
   }
