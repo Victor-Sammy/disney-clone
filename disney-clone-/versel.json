@@ -1,22 +1,6 @@
 {
-    "redirects": [
+    "rewrites": [
       { "source": "/", "destination": "https://disney-clone-nine-omega.vercel.app/" },
-      { "source": "/login", "destination": "https://disney-clone-nine-omega.vercel.app/login", "permanent": true },
-      {
-        "source": "/view-source",
-        "destination": "https://github.com/vercel/vercel"
-      },
-      {
-        "source": "/:path((?!uk/).*)",
-        "has": [
-          {
-            "type": "header",
-            "key": "x-vercel-ip-country",
-            "value": "GB"
-          }
-        ],
-        "destination": "/uk/:path*",
-        "permanent": false
-      }
+      { "source": "/login", "destination": "https://disney-clone-nine-omega.vercel.app/login", "permanent": false }
     ]
   }
