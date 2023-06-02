@@ -9,13 +9,13 @@ export default NextAuth({
     }),
   ],
   secret: process.env.SECRET,
-  // callbacks: {
-  //   async redirect({ url }) {
-  //     const URLs = window.location.pathname
-  //     // Allows relative callback URLs
-  //     if (URLs.includes('/login')) return '/'
-  //     if (!URLs.includes('/')) return '/login'
-  //     return url
-  //   },
-  // },
+  callbacks: {
+    async redirect({ url }) {
+      //const URLs = window.location.pathname
+      // Allows relative callback URLs
+      if (url.includes('/login')) return '/'
+      if (!url.includes('/')) return '/login'
+      return url
+    },
+  },
 })

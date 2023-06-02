@@ -11,10 +11,18 @@ export default function Login() {
   useEffect(() => {
     if (session) {
       //redirect to the homepage
-      //const path = window.location.pathname
+      // const URLs = window.location.pathname
+      // if (URLs.includes('/login')) router.push({
+      //   pathname : "/"
+      // })
+      // if (!URLs.includes('/')) router.push({
+      //   pathname : "/login"
+      // })
+      // ;
       router.push({
-        pathname : "/" || 'https://disney-clone-nine-omega.vercel.app/',
-      });
+        pathname: `${window.location.pathname.slice(0, -5)}`
+      })
+      // modify the url pathname
     }
     return () => {};
   }, []);
