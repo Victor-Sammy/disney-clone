@@ -1,4 +1,3 @@
-import { url } from 'inspector'
 import NextAuth from 'next-auth'
 import GoogleProvider from 'next-auth/providers/google'
 export default NextAuth({
@@ -11,7 +10,8 @@ export default NextAuth({
   ],
   secret: process.env.SECRET,
   callbacks: {
-    async redirect({ url }) {
+    async redirect() {
+      const url = window.location.pathname
       // Allows relative callback URLs
       if (url.includes('/login')) return '/'
       if (!url.includes('/')) return '/login'
