@@ -1,6 +1,6 @@
 {
     "redirects": [
-      { "source": "/index", "destination": "", "permanent": true },
-      { "source": "/login", "destination": "", "permanent": true }
+      { "source": "/index", "destination": "https://disney-clone-topaz.vercel.app", "permanent": true },
+      { "source": "/login", "destination": "disney-clone-topaz.vercel.app/login", "permanent": true }
     ]
   }
