@@ -1,6 +1,6 @@
 {
     "redirects": [
-      { "source": "/", "destination": "disney-clone-two-rust.vercel.app", "permanent": true },
-      { "source": "/login", "destination": "disney-clone-two-rust.vercel.app/login", "permanent": true }
+      { "source": "/index", "destination": "", "permanent": true },
+      { "source": "/login", "destination": "", "permanent": true }
     ]
   }
