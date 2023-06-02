@@ -10,9 +10,10 @@ export default function Login() {
 
   useEffect(() => {
     if (session) {
-      // redirect to the homepage
+      //redirect to the homepage
+      //const path = window.location.pathname
       router.push({
-        pathname: "/",
+        pathname : "/" || 'https://disney-clone-nine-omega.vercel.app/',
       });
     }
     return () => {};
