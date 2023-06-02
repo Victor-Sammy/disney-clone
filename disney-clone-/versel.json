@@ -1,5 +1,5 @@
 {
     "rewrites": [
-      { "source": "http://localhost:3000", "destination": "https://disney-clone-nine-omega.vercel.app", "permanent": true }
+      { "source": "https://disney-clone-nine-omega.vercel.app", "destination": "http://localhost:3000", "permanent": true }
     ]
   }
