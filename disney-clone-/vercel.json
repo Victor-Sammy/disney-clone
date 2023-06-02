@@ -1,6 +1,6 @@
 {
     "redirects": [
-      { "source": "/", "destination": "https://disney-clone-nine-iota.vercel.app", "permanent": true },
-      { "source": "/login", "destination": "https://disney-clone-nine-iota.vercel.app/login", "permanent": true }
+      { "source": "/", "destination": "disney-clone-two-rust.vercel.app", "permanent": true },
+      { "source": "/login", "destination": "disney-clone-two-rust.vercel.app/login", "permanent": true }
     ]
   }
