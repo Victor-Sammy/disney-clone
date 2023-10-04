@@ -2,12 +2,12 @@
     "version": 2,
     "redirects": [
       {
-        "src": "/",
-        "dest": "/pages/index"
+        "source": "/",
+        "destination": "/pages/index"
       },
       {
-        "src": "/login",
-        "dest": "/pages/login"
+        "source": "/login",
+        "destination": "/pages/login"
       }
     ]
 }
