@@ -3,11 +3,11 @@
     "redirects": [
       {
         "source": "/",
-        "destination": "/pages/index"
+        "destination": "/"
       },
       {
         "source": "/login",
-        "destination": "/pages/login"
+        "destination": "/login"
       }
     ]
 }
