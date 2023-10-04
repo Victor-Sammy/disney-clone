@@ -1,6 +1,13 @@
 {
-    "rewrites": [
-      { "source": "localhost:3000", "destination": "https://disney-clone-xx.vercel.app", "permanent": true },
-      { "source": "localhost:3000/login", "destination": "https://disney-clone-xx.vercel.app/login", "permanent": true }
+    "version": 2,
+    "routes": [
+      {
+        "src": "/",
+        "dest": "/pages/index"
+      },
+      {
+        "src": "/login",
+        "dest": "/pages/login"
+      }
     ]
-  }
+}
