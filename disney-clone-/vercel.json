@@ -1,6 +1,6 @@
 {
     "version": 2,
-    "routes": [
+    "redirects": [
       {
         "src": "/",
         "dest": "/pages/index"

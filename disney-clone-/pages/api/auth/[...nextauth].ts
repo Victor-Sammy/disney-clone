@@ -1,5 +1,8 @@
 import NextAuth from 'next-auth'
 import GoogleProvider from 'next-auth/providers/google'
+import { useRouter } from 'next/router'
+
+const router = useRouter()
 
 export default NextAuth({
   // Configure one or more authentication providers
@@ -15,7 +18,7 @@ export default NextAuth({
       //const URLs = window.location.pathname
       //     // Allows relative callback URLs
       if (url.includes('/login')) return '/'
-      if (!url.includes('/')) return '/login'
+      if (!url.includes('/')) return '/'
       return url
     },
   },
