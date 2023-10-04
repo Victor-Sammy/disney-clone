@@ -14,8 +14,9 @@ export default NextAuth({
     async redirect({ url }) {
       //const URLs = window.location.pathname
       //     // Allows relative callback URLs
-
-      return url.slice(0, -5)
+      if (url.includes('/login')) return '/'
+      if (!url.includes('/')) return '/login'
+      return url
     },
   },
 })
